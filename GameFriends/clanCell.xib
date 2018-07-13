@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="clanCell" rowHeight="55" id="Ppu-fn-vUA" customClass="clanCell" customModule="GameFriends" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ppu-fn-vUA" id="Bfh-Ya-QEG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="회원수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvE-GL-mDJ">
+                        <rect key="frame" x="270" y="17" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클랜소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-u8-sG5">
+                        <rect key="frame" x="41" y="27" width="211" height="16"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="211" id="Lgl-1a-h3S"/>
+                            <constraint firstAttribute="width" secondItem="zrU-u8-sG5" secondAttribute="height" multiplier="211:16" id="V14-2q-Lgg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클랜명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jz7-RA-mys">
+                        <rect key="frame" x="41" y="5" width="198" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="198" id="RL9-MC-K3b"/>
+                            <constraint firstAttribute="width" secondItem="jz7-RA-mys" secondAttribute="height" multiplier="198:17" id="zhq-UZ-aF9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zrU-u8-sG5" firstAttribute="top" secondItem="jz7-RA-mys" secondAttribute="bottom" constant="5" id="Dkl-TX-3c9"/>
+                    <constraint firstItem="zrU-u8-sG5" firstAttribute="leading" secondItem="jz7-RA-mys" secondAttribute="leading" id="ERP-4A-acn"/>
+                    <constraint firstItem="jz7-RA-mys" firstAttribute="top" secondItem="Bfh-Ya-QEG" secondAttribute="top" constant="5" id="Hj8-CO-IDz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XvE-GL-mDJ" secondAttribute="trailing" id="Lzm-W9-5cT"/>
+                    <constraint firstItem="jz7-RA-mys" firstAttribute="leading" secondItem="Bfh-Ya-QEG" secondAttribute="leadingMargin" constant="25" id="Xl2-r2-c3f"/>
+                    <constraint firstItem="XvE-GL-mDJ" firstAttribute="centerY" secondItem="Bfh-Ya-QEG" secondAttribute="centerY" id="gPL-FA-s3s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clanComment" destination="zrU-u8-sG5" id="Fa0-0p-QiH"/>
+                <outlet property="clanName" destination="jz7-RA-mys" id="vSc-3B-bMF"/>
+                <outlet property="number" destination="XvE-GL-mDJ" id="HuL-P6-lAI"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+</document>
