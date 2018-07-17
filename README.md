@@ -1,1 +1,2 @@
 # GameFriends
+Game community application.
